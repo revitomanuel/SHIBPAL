@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.HashMap;
 public class Admin {
-    private static Scanner scanner = new Scanner(System.in);
-    private static ArrayList<String> admins = new ArrayList<String>();
     public static HashMap<String, Restaurant> restaurants = new HashMap<>();
 
     public static HashMap<String, Restaurant> getRestaurants(){
