@@ -1,5 +1,15 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.HashMap;
 public class Admin {
+    private static Scanner scanner = new Scanner(System.in);
+    private static ArrayList<String> admins = new ArrayList<String>();
+    public static HashMap<String, Restaurant> restaurants = new HashMap<>();
+
+    public static HashMap<String, Restaurant> getRestaurants(){
+
+        return restaurants;
+    }
     public static void main(String[] args) {
         String username = "Seungcheol";
         String password = "password";
@@ -21,6 +31,9 @@ public class Admin {
         scanner.close();
     }
 
+    public static void restaurantInit(){
+
+    }
     public static void menuAdmin(){
         Scanner scanner = new Scanner(System.in);
         while (true){
