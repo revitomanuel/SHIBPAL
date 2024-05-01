@@ -4,6 +4,10 @@ public class Greetings {
         System.out.println("              ₊˚⊹ 안녕 ⊹˚₊              ");
         System.out.println("          Welcome to Shibpal           ");
         System.out.println("       Korean Online Food Order        ");
+        System.out.println(" ------------------------------------  ");
+        System.out.println(" ------------------------------------  ");
+        System.out.println(" 1. Login as Admin                     ");
+        System.out.println(" 2. Login as Customer                  ");
         System.out.println("✧====================================✧");
     }
 
