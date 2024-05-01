@@ -3,7 +3,6 @@ import java.util.Scanner;
 import java.util.HashMap;
 public class Admin {
     public static HashMap<String, Restaurant> restaurants = new HashMap<>();
-
     public static HashMap<String, Restaurant> getRestaurants(){
 
         return restaurants;
