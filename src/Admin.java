@@ -71,9 +71,9 @@ public class Admin {
         restaurants.put("Bulnoriya", restaurant2);
         restaurants.put("BabMyeon", restaurant3);
     }
-    public static void menuAdmin(){
+    public static void menuAdmin() {
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        while (true) {
             System.out.println("----------------------------");
             System.out.println("| 1. Restaurant List       |");
             System.out.println("| 2. Add New Restaurant    |");
@@ -85,10 +85,10 @@ public class Admin {
             System.out.print(" Enter Choice: ");
             int choice = scanner.nextInt();
 
-            switch (choice){
+            switch (choice) {
                 case 1:
+                    viewRestaurants();
                     break;
-
                 case 2:
                     break;
                 case 3:
@@ -102,4 +102,20 @@ public class Admin {
             }
         }
     }
+
+    public static void viewRestaurants(){
+        System.out.println("\n");
+        System.out.println("----           Restaurant List           -----\n");
+        for (String restaurantName : restaurants.keySet()) {
+            System.out.println("** " +restaurantName + ", " + restaurants.get(restaurantName).getAddress()) ;
+            System.out.println("====                Menu                 =====");
+            for (Menu menu : restaurants.get(restaurantName).getMenus()) {
+                System.out.println("" + menu.getName() + "                        \t-- Rp " + menu.getPrice() + ",-");
+            }
+            System.out.println("---------------------------------------------");
+            System.out.println("");
+        }
+        System.out.println("");
+    }
+
 }
