@@ -4,7 +4,7 @@ public class Main {
     //Deklarasi variabel global
     private static int choice;
 
-    public static void main(String[] args) {
+    public static void main() {
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();

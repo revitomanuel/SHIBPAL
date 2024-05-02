@@ -7,7 +7,7 @@ public class Admin {
 
         return restaurants;
     }
-    public static void main(String[] args) {
+    /* public static void Admin() {
         String username = "Seungcheol";
         String password = "password";
 
@@ -26,7 +26,7 @@ public class Admin {
         }
 
         scanner.close();
-    }
+    } */
 
     public static void restaurantInit(){
         //restaurant 1
@@ -90,12 +90,16 @@ public class Admin {
                     viewRestaurants();
                     break;
                 case 2:
+                    addRestaurant();
                     break;
                 case 3:
+                    deleteRestaurant();
                     break;
                 case 4:
+                    Main.main();
                     break;
                 case 0:
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("Invalid Choice!");
@@ -116,6 +120,41 @@ public class Admin {
             System.out.println("");
         }
         System.out.println("");
+    }
+
+    public static void addRestaurant(){
+        Scanner masukkan = new Scanner(System.in);
+
+        System.out.print("Enter restaurant name: ");
+        String name = masukkan.nextLine();
+        System.out.print("Enter restaurant address: ");
+        String address = masukkan.nextLine();
+        Restaurant newRestaurant = new Restaurant(name, address);
+        String inputUlang = "";
+
+        while (!inputUlang.equals("Bye")) {
+            System.out.print("Enter menu (ex input format: menuName--menuPrice), input \"Bye\" to finish: ");
+            inputUlang = masukkan.nextLine();
+            if (!inputUlang.equals("Bye")) {
+                String[] menuData = inputUlang.split("--");
+                newRestaurant.addMenu(new Menu(menuData[0], Integer.parseInt(menuData[1])));
+            }
+        }
+        restaurants.put(name, newRestaurant);
+        System.out.println("Restaurant added successfully");
+    }
+
+    public static void deleteRestaurant(){
+        Scanner masukkan = new Scanner(System.in);
+
+        System.out.print("Enter restaurant name: ");
+        String restaurantName = masukkan.nextLine();
+        if (restaurants.containsKey(restaurantName)) {
+            restaurants.remove(restaurantName);
+            System.out.println("Restaurant deleted successfully");
+        } else {
+            System.out.println("Restaurant not found");
+        }
     }
 
 }
