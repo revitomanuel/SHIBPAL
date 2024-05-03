@@ -8,7 +8,7 @@ Revito Manuel Hasudungan Manik (2305551130)
 
 ---
 
-SHIBPAL merupakan program pemesanan secara online yang menggunakan konsep pemrograman berorientasi objek atau OOP (Object Oriented Programming).
+SHIBPAL merupakan program pemesanan Korean Food secara online yang menggunakan konsep pemrograman berorientasi objek atau OOP (Object Oriented Programming).
 
 Program ini dimulai dengan memilih tipe user, apakah sebagai admin atau customer. Admin pada program ini dapat melakukan beberapa hal, seperti melihat restaurant, menambah restaurant, dan menghapus restaurant. Sedangkan customer dapat membuat pesanan pada satu restaurant. 
 
