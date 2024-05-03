@@ -4,10 +4,9 @@ import java.util.HashMap;
 public class Admin {
     public static HashMap<String, Restaurant> restaurants = new HashMap<>();
     public static HashMap<String, Restaurant> getRestaurants(){
-
         return restaurants;
     }
-    /* public static void Admin() {
+   public static void login() {
         String username = "Seungcheol";
         String password = "password";
 
@@ -26,7 +25,7 @@ public class Admin {
         }
 
         scanner.close();
-    } */
+    }
 
     public static void restaurantInit(){
         //restaurant 1
@@ -96,7 +95,7 @@ public class Admin {
                     deleteRestaurant();
                     break;
                 case 4:
-                    Main.main();
+                    Main.main(args);
                     break;
                 case 0:
                     System.exit(0);
@@ -145,10 +144,10 @@ public class Admin {
     }
 
     public static void deleteRestaurant(){
-        Scanner masukkan = new Scanner(System.in);
+        Scanner insert = new Scanner(System.in);
 
         System.out.print("Enter restaurant name: ");
-        String restaurantName = masukkan.nextLine();
+        String restaurantName = insert.nextLine();
         if (restaurants.containsKey(restaurantName)) {
             restaurants.remove(restaurantName);
             System.out.println("Restaurant deleted successfully");

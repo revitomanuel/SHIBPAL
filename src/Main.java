@@ -4,7 +4,7 @@ public class Main {
     //Deklarasi variabel global
     private static int choice;
 
-    public static void main() {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();
@@ -15,7 +15,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    //Panggil method dari kelas Admin di sini
+                    Admin.login();
                     break;
                 case 2:
                     //Panggil method dari kelas Customer di sini
@@ -26,4 +26,5 @@ public class Main {
             }
         } while (choice != 1 && choice != 2);
     }
+
 }
