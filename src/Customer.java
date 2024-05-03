@@ -101,7 +101,7 @@ public class Customer {
         ArrayList<Order> orders = new ArrayList<>();
         Scanner input = new Scanner(System.in);
 
-        while(choice != 3){
+        while(choice != 0){
             System.out.println("✧====================================✧");
             System.out.println(" 1. Make Order                         ");
             System.out.println(" 2. View Order                         ");
@@ -177,7 +177,7 @@ public class Customer {
                     System.out.print("Would you like to order again? (y/n)  ");
                     String pesan = input.nextLine();
                         //Jika n, maka perulangan untuk make order dihentikan dan akan menampilkan pesan di bawah
-                        if(pesan.equals("n") || pesan.equals("N")) {
+                        if(pesan.equalsIgnoreCase("n")) {
                             choice = 0;
                             System.out.println("\nPlease Make Payment");
                             Greetings.gomawo();
