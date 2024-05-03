@@ -2,14 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     //Deklarasi variabel global
+    private static int choice;
+
 
     public static void main(String[] args) {
-        Admin.restaurantInit();
-        greet();
+        userType();
     }
-
-    public static void greet() {
-        int choice;
+    public static void userType() {
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();
@@ -20,15 +19,17 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    Admin.login();
+                    Admin.adminLogin();
                     break;
                 case 2:
-                    //Panggil method dari kelas Customer di sini
+                    Customer.menuCustomer();
                     break;
                 default:
                     //Validasi input apabila input yang dimasukkan selain 1 dan 2
                     System.out.println("Invalid Choice. Please enter the available options! \n");
             }
         } while (choice != 1 && choice != 2);
+
+        input.close();
     }
 }

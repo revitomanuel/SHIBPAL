@@ -6,23 +6,31 @@ public class Admin {
     public static HashMap<String, Restaurant> getRestaurants(){
         return restaurants;
     }
-   public static void login() {
+    public static void adminLogin() {
+        int loginStatus;
+
         String username = "Seungcheol";
         String password = "password";
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your username: ");
-        String enteredUsername = scanner.nextLine();
+        do {
+            System.out.print("Enter your username: ");
+            String enteredUsername = scanner.nextLine();
 
-        System.out.print("Enter your password: ");
-        String enteredPassword = scanner.nextLine();
+            System.out.print("Enter your password: ");
+            String enteredPassword = scanner.nextLine();
 
-        if (enteredUsername.equals(username) && enteredPassword.equals(password)) {
-            System.out.println("Login successful!");
-        } else {
-            System.out.println("Login failed. Please check your username and password.");
-        }
+                if (enteredUsername.equals(username) && enteredPassword.equals(password)) {
+                    System.out.println("Login successful!");
+                    loginStatus = 1;
+                    menuAdmin();
+                }
+                else {
+                    System.out.println("Login failed. Please check your username and password.");
+                    loginStatus = 0;
+                }
+        } while (loginStatus == 0);
 
         scanner.close();
     }
@@ -71,8 +79,10 @@ public class Admin {
         restaurants.put("My Eon Bab", restaurant3);
     }
     public static void menuAdmin() {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
+        Scanner input = new Scanner(System.in);
+        int choice;
+
+        do {
             System.out.println("----------------------------");
             System.out.println("| 1. Restaurant List       |");
             System.out.println("| 2. Add New Restaurant    |");
@@ -81,8 +91,8 @@ public class Admin {
             System.out.println("| 0. Exit                  |");
             System.out.println("----------------------------");
 
-            System.out.print(" Enter Choice: ");
-            int choice = scanner.nextInt();
+            System.out.print("Enter Choice: ");
+            choice = input.nextInt();
 
             switch (choice) {
                 case 1:
@@ -95,7 +105,7 @@ public class Admin {
                     deleteRestaurant();
                     break;
                 case 4:
-                    Main.greet();
+                    Main.userType();
                     break;
                 case 0:
                     System.exit(0);
@@ -103,15 +113,15 @@ public class Admin {
                 default:
                     System.out.println("Invalid Choice!");
             }
-        }
+        } while (choice < 0 || choice > 4);
     }
 
     public static void viewRestaurants(){
         System.out.println("\n");
-        System.out.println("----           Restaurant List           -----\n");
+        System.out.println("----Restaurant List-----\n");
         for (String restaurantName : restaurants.keySet()) {
             System.out.println("** " +restaurantName + ", " + restaurants.get(restaurantName).getAddress()) ;
-            System.out.println("====                Menu                 =====");
+            System.out.println("====Menu=====");
             for (Menu menu : restaurants.get(restaurantName).getMenus()) {
                 System.out.println("" + menu.getName() + "                        \t-- Rp " + menu.getPrice() + ",-");
             }

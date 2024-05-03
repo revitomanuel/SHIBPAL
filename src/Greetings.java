@@ -9,6 +9,7 @@ public class Greetings {
         System.out.println(" 1. Login as Admin                     ");
         System.out.println(" 2. Login as Customer                  ");
         System.out.println("✧====================================✧");
+
     }
 
     public static void gomawo() {
