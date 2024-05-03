@@ -6,6 +6,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Admin.restaurantInit();
         userType();
     }
     public static void userType() {
@@ -19,7 +20,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    Admin.adminLogin();
+                    Admin.login();
                     break;
                 case 2:
                     Customer.menuCustomer();
