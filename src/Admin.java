@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.HashMap;
 public class Admin {
@@ -132,10 +131,10 @@ public class Admin {
         Restaurant newRestaurant = new Restaurant(name, address);
         String inputUlang = "";
 
-        while (!inputUlang.equals("Bye")) {
-            System.out.print("Enter menu (ex input format: menuName--menuPrice), input \"Bye\" to finish: ");
+        while (!inputUlang.equals("done")) {
+            System.out.print("Enter menu (ex input format: menuName--menuPrice), input \"done\" to finish: ");
             inputUlang = masukkan.nextLine();
-            if (!inputUlang.equals("Bye")) {
+            if (!inputUlang.equals("done")) {
                 String[] menuData = inputUlang.split("--");
                 newRestaurant.addMenu(new Menu(menuData[0], Integer.parseInt(menuData[1])));
             }
