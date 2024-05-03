@@ -6,6 +6,7 @@ Jeaconia Elfrida Tiono (2305551094)
 
 Revito Manuel Hasudungan Manik (2305551130)
 
+---
 
 SHIBPAL merupakan program pemesanan secara online yang menggunakan konsep pemrograman berorientasi objek atau OOP (Object Oriented Programming).
 
@@ -60,4 +61,45 @@ Gambar di atas merupakan tampilan saat masuk sebagai Customer. Pada proses ini, 
 
    ![Screenshot 2024-05-03 161208](https://github.com/revitomanuel/SHIBPAL/assets/146865963/bac94642-38d3-4741-b5f7-c81c18e8625b)
 
-Pada saat sign up, user diminta untuk menginputkan username dan password. Ketika sign up berhasil dilakukan, user akan diminta untuk melakukan login dengan username dan password yang telah didaftarkan pada saat sign up. Selanjutnya, program akan memeriksan kesesuaian username dan password yang baru saja diinputkan dengan yang telah didaftarkan. Gambar di atas juga merupakan tampilan saat login admin berhasil.
+Gambar di atas merupakan tampilan saat user memilih opsi 2, yakni sign up. Pada saat sign up, user diminta untuk menginputkan username dan password. Ketika sign up berhasil dilakukan, user akan diminta untuk melakukan login dengan username dan password yang telah didaftarkan. Gambar di atas juga merupakan tampilan saat sign up customer berhasil.
+
+   ![Screenshot 2024-05-03 195644](https://github.com/revitomanuel/SHIBPAL/assets/146865963/c07c471d-8af1-4ff7-a2a1-9d0a9c4875b4)
+
+Gambar di atas merupakan tampilan saat user diminta untuk melakukan login setelah melakukan sign up. Sistem akan memeriksan kesesuaian username dan password yang baru saja diinputkan dengan yang telah didaftarkan. Ketika login gagal dilakukan, maka sistem akan terus meminta username dan password sampai user menginputnya dengan benar. 
+
+5. Menu Customer
+   
+   ![Screenshot 2024-05-03 200359](https://github.com/revitomanuel/SHIBPAL/assets/146865963/7da82ec2-32ec-44f6-a630-cad0586537a9)
+
+Gambar di atas merupakan tampilan menu customer, di mana terdapat beberapa pilihan yang dapat dilakukan oleh customer pada program ini.
+
+   ![Screenshot 2024-05-03 200755](https://github.com/revitomanuel/SHIBPAL/assets/146865963/fec7a4bf-2d8e-491f-8c15-f1e87316970f)
+
+Gambar di atas merupakan tampilan saat customer memilih opsi 1, yakni membuat pesanan. Sistem akan menampilkan data restaurant terlebih dahulu dan customer dapat memilihnya dengan cara menginputkan nama restaurant. 
+
+   ![Screenshot 2024-05-03 201141](https://github.com/revitomanuel/SHIBPAL/assets/146865963/2f25f1c9-7b09-4599-ba6a-e95721ed54cd)
+
+Gambar di atas merupakan tampilan saat customer telah memilih restaurant. Sistem akan menampilkan daftar menu yang tersedia pada restaurant tersebut beserta harga per menunya. 
+
+   ![Screenshot 2024-05-03 201643](https://github.com/revitomanuel/SHIBPAL/assets/146865963/b90f2c65-3f0a-4be1-b279-7c9a52931c9c)
+   ![Screenshot 2024-05-03 201657](https://github.com/revitomanuel/SHIBPAL/assets/146865963/e16db048-a22a-4002-b0b0-e4409a0937bf)
+
+Kedua gambar di atas merupakan tampilan saat customer diminta untuk menginputkan menu yang ingin dipesan beserta kuantitas setiap menunya. Setiap selesai memesan satu menu, program akan menanyakan customer apakah ingin ada pesanan tambahana atau tidak. Jika ada, maka program akan kembali menampilkan menu makanan beserta harganya, namun jika tidak, program akan meminta customer untuk menginputkan jarak (dalam km).
+
+   ![image](https://github.com/revitomanuel/SHIBPAL/assets/146865963/1ccfe2dc-6083-4dd1-9b04-6b4011082dfc)
+
+Gambar di atas merupakan tampilan saat customer telah selesai melakukan pesanan. Sistem akan menampilkan kembali menu customer, di mana customer dapat melihat detail pesanan yang baru saja dilakukan dengan mimilih opsi 2. Setelah itu, detail pesanan akan ditampilkan. Sistem akan menanyakan apakah customer ingin melakukan pesanan lagi atau tidak. Jika ya, maka menu customer akan ditampilkan lagi.
+
+   ![image](https://github.com/revitomanuel/SHIBPAL/assets/146865963/7b0b00eb-0e65-4818-8407-bfe8a2c57530)
+
+Gambar di atas merupakan tampilan ketika customer sudah tidak ingin melakukan pesanan lagi. 
+
+
+
+
+
+
+
+
+
+
