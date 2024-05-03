@@ -32,8 +32,32 @@ Gambar di atas merupakan tampilan saat masuk sebagai Admin. Selanjutnya user aka
 
    ![Screenshot 2024-05-03 152831](https://github.com/revitomanuel/SHIBPAL/assets/146865963/918318e9-81a6-4655-a29b-c851c2899c1e)
 
-Gambar di atas merupakan tampilan saat gagal 
-   
-2. Masuk sebagai Customer
+Gambar di atas merupakan tampilan saat gagal melakukan login sebagai admin. Selama belum berhasil, program akan melakukan perulangan dengan meminta user untuk menginputkan username dan password sampai keduanya benar. 
 
-5. 
+3. Menu Admin
+
+   ![Screenshot 2024-05-03 154150](https://github.com/revitomanuel/SHIBPAL/assets/146865963/9f117ae0-891f-437b-ad1f-c71c31eb5386)
+
+Gambar di atas merupakan tampilan menu admin, di mana terdapat beberapa pilihan yang dapat dilakukan oleh seorang admin.
+
+   ![Screenshot 2024-05-03 154338](https://github.com/revitomanuel/SHIBPAL/assets/146865963/66a5c005-5ea8-47a6-bc39-a3718d715d39)
+
+Gambar di atas merupakan tampilan saat admin memilih opsi 1, yakni melihat daftar restaurant.
+
+   ![Screenshot 2024-05-03 155433](https://github.com/revitomanuel/SHIBPAL/assets/146865963/daab2bb3-b285-4f39-bda3-5b3ec51cb3d7)
+
+Gambar di atas merupakan tampilan saat admin memilih opsi 2, yakni menambah restaurant. Selanjutnya, admin akan diminta untuk mengisikan informasi terkait restaurant seperti nama restaurant, alamat restaurant, dan menu yang ada beserta harganya.
+
+   ![Screenshot 2024-05-03 155816](https://github.com/revitomanuel/SHIBPAL/assets/146865963/770c8fc6-81fd-4fe2-9b85-6f3285b45378)
+
+Gambar di atas merupakan tampilan saat admin memilih opsi 3, yakni menghapus restaurant dengan menginputkan nama restaurant tersebut.
+
+4. Masuk sebgai Customer
+
+   ![Screenshot 2024-05-03 160347](https://github.com/revitomanuel/SHIBPAL/assets/146865963/5d11f381-8b26-4d7a-95e4-e8f4017ca2fc)
+
+Gambar di atas merupakan tampilan saat masuk sebagai Customer. Pada proses ini, user dapat login sebagai customer jika sudah melakukan sign up terlebih dahulu. 
+
+   ![Screenshot 2024-05-03 161208](https://github.com/revitomanuel/SHIBPAL/assets/146865963/bac94642-38d3-4741-b5f7-c81c18e8625b)
+
+Pada saat sign up, user diminta untuk menginputkan username dan password. Ketika sign up berhasil dilakukan, user akan diminta untuk melakukan login dengan username dan password yang telah didaftarkan pada saat sign up. Selanjutnya, program akan memeriksan kesesuaian username dan password yang baru saja diinputkan dengan yang telah didaftarkan. Gambar di atas juga merupakan tampilan saat login admin berhasil.
