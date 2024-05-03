@@ -17,6 +17,11 @@ Saat memilih masuk sebagai Admin, program akan diawali dengan memasukkan usernam
 Saat memilih masuk sebagai Customer, program akan diawali dengan melakukan Sign Up terlebih dahulu dengan memasukkan username dan password. Dan setelah itu dapat melakukan Login. Ketika login berhasil, maka dapat membuat pesanan. Program akan menampilkan beberapa restaurant yang dapat dipilih oleh customer ketika ingin mengorder makanan. Setiap restaurant memiliki menu makanan dan minuman beserta harganya. Selanjutnya, customer akan memilih menu makanan atau minuman yang ingin dipesan dan menginputkan kuantitas setiap menunya. Setelah selesai membuat pesanan, customer dapat melihat detail order yang berisikan identitas restaurant berupa nama restaurant, identitas menu berupa nama menunya, kuantitas setiap menu yang dipesan, jarak lokasi antar, dan total harga.
 
 
+Program ini menggunakan UML (Unified Modeling Language) sebagai sarana perancangannya. Berikut adalah UML dari Program SHIBPAL.
+
+![UML SHIBPAL](https://github.com/revitomanuel/SHIBPAL/assets/146865963/915cae3b-5e22-4d9b-a8c0-90fee8dbe790)
+
+
 ==TAMPILAN PROGRAM==
 
 1. User Type
