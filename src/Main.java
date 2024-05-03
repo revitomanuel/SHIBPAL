@@ -9,7 +9,7 @@ public class Main {
         greet();
     }
 
-    public static void greet(){
+    public static void greet() {
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();
@@ -31,3 +31,4 @@ public class Main {
             }
         } while (choice != 1 && choice != 2);
     }
+}
