@@ -7,7 +7,7 @@ public class Admin {
         return restaurants;
     }
    public static void login() {
-        String username = "Seungcheol";
+        String username = "seungcheol";
         String password = "password";
 
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +20,7 @@ public class Admin {
 
         if (enteredUsername.equals(username) && enteredPassword.equals(password)) {
             System.out.println("Login successful!");
+            menuAdmin();
         } else {
             System.out.println("Login failed. Please check your username and password.");
         }
@@ -113,9 +114,9 @@ public class Admin {
             System.out.println("** " +restaurantName + ", " + restaurants.get(restaurantName).getAddress()) ;
             System.out.println("====                Menu                 =====");
             for (Menu menu : restaurants.get(restaurantName).getMenus()) {
-                System.out.println("" + menu.getName() + "                        \t-- Rp " + menu.getPrice() + ",-");
+                System.out.println("" + menu.getName() + "\t\t\t\t-- Rp " + menu.getPrice() + ",-");
             }
-            System.out.println("---------------------------------------------");
+            System.out.println("----------------------------------------------");
             System.out.println("");
         }
         System.out.println("");
