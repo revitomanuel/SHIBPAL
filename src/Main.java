@@ -5,6 +5,11 @@ public class Main {
     private static int choice;
 
     public static void main(String[] args) {
+        Admin.restaurantInit();
+        greet();
+    }
+
+    public static void greet(){
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();
@@ -26,5 +31,3 @@ public class Main {
             }
         } while (choice != 1 && choice != 2);
     }
-
-}

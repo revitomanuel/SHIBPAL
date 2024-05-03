@@ -53,7 +53,7 @@ public class Admin {
         restaurant2.addMenu(new Menu("Iced Tea", 10000));
 
         //restaurant 3
-        Restaurant restaurant3 = new Restaurant("BabMyeon", "JL Raya Kuta No. 553, Badung");
+        Restaurant restaurant3 = new Restaurant("My Eon Bab", "JL Raya Kuta No. 553, Badung");
         restaurant3.addMenu(new Menu("JjangMyeon", 20000));
         restaurant3.addMenu(new Menu("JjangBab", 18000));
         restaurant3.addMenu(new Menu("BibimMyeon", 24000));
@@ -68,7 +68,7 @@ public class Admin {
         //add restaurant data
         restaurants.put("ChicKen", restaurant1);
         restaurants.put("Bulnoriya", restaurant2);
-        restaurants.put("BabMyeon", restaurant3);
+        restaurants.put("My Eon Bab", restaurant3);
     }
     public static void menuAdmin() {
         Scanner scanner = new Scanner(System.in);
@@ -95,7 +95,7 @@ public class Admin {
                     deleteRestaurant();
                     break;
                 case 4:
-                    Main.main(args);
+                    Main.greet();
                     break;
                 case 0:
                     System.exit(0);
