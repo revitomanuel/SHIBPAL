@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     //Deklarasi variabel global
-    private static int choice;
 
     public static void main(String[] args) {
         Admin.restaurantInit();
@@ -10,6 +9,7 @@ public class Main {
     }
 
     public static void greet() {
+        int choice;
         Scanner input = new Scanner(System.in);
 
         Greetings.annyeong();
