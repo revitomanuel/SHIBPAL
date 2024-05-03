@@ -30,9 +30,9 @@ Gambar di atas merupakan tampilan awal saat Program SHIBPAL dijalankan. Terdapat
 
 Gambar di atas merupakan tampilan saat masuk sebagai Admin. Selanjutnya user akan diminta untuk memasukkan username dan password yang telah diinialisasikan pada kode program. Selanjutnya, program akan memeriksan kesesuaian username dan password yang baru saja diinputkan dengan yang ada di dalam kode program. Gambar di atas juga merupakan tampilan saat login admin berhasil.
 
-         
+   ![Screenshot 2024-05-03 152831](https://github.com/revitomanuel/SHIBPAL/assets/146865963/918318e9-81a6-4655-a29b-c851c2899c1e)
 
-
+Gambar di atas merupakan tampilan saat gagal 
    
 2. Masuk sebagai Customer
 
