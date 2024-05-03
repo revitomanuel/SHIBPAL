@@ -7,23 +7,30 @@ public class Admin {
         return restaurants;
     }
     public static void login() {
+        int loginStatus;
+
         String username = "Seungcheol";
         String password = "password";
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your username: ");
-        String enteredUsername = scanner.nextLine();
+        do {
+            System.out.print("Enter your username: ");
+            String enteredUsername = scanner.nextLine();
 
-        System.out.print("Enter your password: ");
-        String enteredPassword = scanner.nextLine();
+            System.out.print("Enter your password: ");
+            String enteredPassword = scanner.nextLine();
 
-        if (enteredUsername.equals(username) && enteredPassword.equals(password)) {
-            System.out.println("Login successful!");
-            menuAdmin();
-        } else {
-            System.out.println("Login failed. Please check your username and password.");
-        }
+            if (enteredUsername.equals(username) && enteredPassword.equals(password)) {
+                System.out.println("Login successful!");
+                loginStatus = 1;
+                menuAdmin();
+            }
+            else {
+                System.out.println("Login failed. Please check your username and password. \n");
+                loginStatus = 0;
+            }
+        } while (loginStatus == 0);
 
         scanner.close();
     }
